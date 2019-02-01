@@ -45,6 +45,6 @@
            name: Deploy APK.
            command: |
              if [ "${CIRCLE_BRANCH}" != "master" ]; then
-                sudo chmod +x ./gradlew
+                | sudo chmod +x ./gradlew
                 ./gradlew crashlyticsUploadDistributionRelease
               fi
